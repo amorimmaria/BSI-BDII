@@ -1,14 +1,14 @@
 ## Lista de Exercícios - SQL DCL
 
-> Considere o banco de dados EquipeBD abaixo para responder às questões:
-Funcionario (codigo, nome, sexo, dataNasc, salario, supervisor, depto)
-Departamento (codigo, sigla, descricao, gerente)
-Equipe(codigo, nomeEquipe)
-Membro(codigo, codEquipe, codFuncionario)
-Projeto (codigo, descricao, depto, responsavel, dataInicio, dataFim, situacao, dataConclusao, equipe) 
-Atividade (codigo, descricao, dataInicio, dataFim, situacao, dataConclusao)
-AtividadeMembro(codAtividade, codMembro)
-AtividadeProjeto (codAtividade, codProjeto)
+> Considere o banco de dados EquipeBD abaixo para responder às questões:<br>
+Funcionario (codigo, nome, sexo, dataNasc, salario, supervisor, depto)<br>
+Departamento (codigo, sigla, descricao, gerente)<br>
+Equipe(codigo, nomeEquipe)<br>
+Membro(codigo, codEquipe, codFuncionario)<br>
+Projeto (codigo, descricao, depto, responsavel, dataInicio, dataFim, situacao, dataConclusao, equipe) <br>
+Atividade (codigo, descricao, dataInicio, dataFim, situacao, dataConclusao)<br>
+AtividadeMembro(codAtividade, codMembro)<br>
+AtividadeProjeto (codAtividade, codProjeto)<br>
 
 - Situação pode ser: Planejado, Em andamento, Concluído.
 - Script de criação: https://github.com/tacianosilva/bsi-tasks/tree/master/bd/scripts/EquipesBD 
