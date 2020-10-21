@@ -1,3 +1,3 @@
-# BSI- Banco de Dados II
+# BSI - Banco de Dados II
 
-Repositório de resolução de exercícios da disciplina de Banco de Dados II.
+Repositório de resolução dos exercícios da disciplina de Banco de Dados II.
