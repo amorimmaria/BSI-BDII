@@ -1,14 +1,11 @@
-/* 1 - Faça um função para calcular a idade do funcionário.*/
-
-CREATE OR REPLACE FUNCTION calcIdadeFunc(INTEGER)
-	RETURNS INTERVAL
-	AS $$
+CREATE FUNCTION calcIdadeFunc(INTEGER) 
+RETURNS INTEGER AS $$
+DECLARE idade INTEGER;
 BEGIN
-	RETURN (
-		SELECT AGE(f.datanasc)
-		FROM funcionario f
-		WHERE f.codigo = $1
-	);
+	SELECT INTO idade EXTRACT(years FROM AGE(f.datanasc)) 
+	FROM funcionario f 
+	WHERE f.codigo = $1;
+	RETURN idade;
 END;
 $$ LANGUAGE plpgsql;
 
